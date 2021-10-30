@@ -40,9 +40,6 @@ body {
 
 const Layout = ({ children }) => {
   const{ currentTheme} = useGlobalStateContext()
-  console.log("Check => ~ file: layout.js ~ line 42 ~ Layout ~ useGlobalStateContext()",currentTheme, useGlobalStateContext())
-  // const { currentTheme } = 'dark'
-    // const dispatch = useGlobalDispatchContext()
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
